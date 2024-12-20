@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Show DDB Source",
+  "version": "1.0",
+
+  "description": "Adds a button on DDB item page to retrieve source",
+
+  "icons": {
+    "240": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.deutsche-digitale-bibliothek.de/item/*"],
+      "js": ["addSourceButton.js"]
+    }
+  ]
+}
+
