@@ -6,7 +6,7 @@ function addButtonToMediaControls() {
 
     // Get the current URL of the website (you can adjust this based on what part you need)
     const currentUrl = window.location.href; // Full current URL
-    const urlPart = currentUrl.split('/').slice(-1)[0]; // Example: Get the last part of the URL path
+    const urlPart = currentUrl.split('/').slice(-1)[0].split('?')[0];
 
     // Set attributes for the button
     viewSource.id = "viewSourceButton"; // Set a unique id
